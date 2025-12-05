@@ -1,13 +1,15 @@
 deployments = {
   myFirstDeployment = {
-    blueprint_name    = "Simple IAC Blueprint"
-    deployment_name      = "Ubuntu Provisioned by TF (x5)"
+    blueprint_name    = "VM With Disks"
+    deployment_name      = "Deployed from Template"
     description          = "Provisioned by TF"
     inputs = {
-      flavorSize = "medium"
-      diskCount  = 4
-      diskSize   = 10
-      image      = "ubuntu22"
+      flavorSize   = "medium"
+      diskCount    = 2
+      diskSize     = 10
+      image        = "ubuntu24"
+      serviceLevel = "sandbox"
+      application  = "sandbox"
     }
   }
 }
