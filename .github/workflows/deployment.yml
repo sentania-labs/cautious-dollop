@@ -20,7 +20,7 @@ jobs:
       TF_VAR_vcfa_refresh_token: ${{ secrets.VCFA_REFRESH_TOKEN}}
       TF_VAR_vcfa_project: ${{ secrets.VCFA_PROJECT}}
       TF_VAR_vcfa_organization: ${{ secrets.vcfa_organization}}
-      TF_VAR_vcfa_url: ${{ secrets.vcfa_url}}
+      TF_VAR_vcfa_url: ${{ vars.vcfa_url}}
       
 
     steps:
