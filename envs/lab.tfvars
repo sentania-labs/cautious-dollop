@@ -1,8 +1,8 @@
 deployments = {
   myFirstDeployment = {
-    blueprint_name    = "VM With Disks"
-    deployment_name      = "Deployed from Template"
-    description          = "Provisioned by TF"
+    blueprint_name  = "VM With Disks"
+    deployment_name = "Deployed from Template"
+    description     = "Provisioned by TF"
     inputs = {
       flavorSize   = "medium"
       diskCount    = 2

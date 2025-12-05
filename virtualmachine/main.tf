@@ -8,8 +8,8 @@ resource "vra_deployment" "this" {
   name        = var.deployment_name
   description = var.description
 
-  blueprint_id         = data.vra_blueprint.this.id
-  project_id           = data.vra_project.this.id
+  blueprint_id = data.vra_blueprint.this.id
+  project_id   = data.vra_project.this.id
 
 
   timeouts {

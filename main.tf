@@ -3,11 +3,11 @@ module "deployments" {
   source   = "./virtualmachine"
   for_each = var.deployments
 
-  project_name         = var.vcfa_project
-  deployment_name      = each.value.deployment_name
-  description          = each.value.description
-  blueprint_name    = each.value.catalog_item_name  
-  inputs               = each.value.inputs
+  project_name    = var.vcfa_project
+  deployment_name = each.value.deployment_name
+  description     = each.value.description
+  blueprint_name  = each.value.catalog_item_name
+  inputs          = each.value.inputs
 }
 
 data "vra_machine" "all" {
