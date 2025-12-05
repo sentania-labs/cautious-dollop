@@ -1,7 +1,7 @@
 #Blueprint request
 module "deployments" {
-  source  = "github.com/sentania-labs/terraform-vcfa-vmapps-blueprint"
-  version = "v0.8"
+  source  = "sentania-labs/vmapps-blueprint/vra"
+  version = "0.8.0"
 
   for_each = var.deployments
 
